@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharma Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+  const buyNowButtons = document.querySelectorAll('.buy-now button');
+  buyNowButtons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      event.preventDefault(); 
+      const productName = this.closest('.best-p1-txt').querySelector('.name-of-p p').innerText;
+      const price = this.closest('.best-p1-txt').querySelector('.price').innerText;
+      alert(`You clicked Buy Now for ${productName} at ${price}`);
+    });
+  });
+});
+
+  </script>
+</head>
+<body>
+  <nav class="navbar">
+      <div class="navbar-container">
+          <input type="checkbox" name="" id="checkbox">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="/public/index.html">Home</a></li>
+              <li><a href="#sellers">Shop</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="logo">
+              <h1 style="padding-left: 30px;">Arogya AI</h1>
+          </div>
+      </div>
+  </nav>
+
+  <section id="collection">
+      <div class="collections container">
+          <div class="content">
+              <img src="360_F_281427785_gfahY8bX4VYCGo6jlfO8St38wS9cJQop.jpg" alt="img" />
+              <div class="img-content">
+                  <p>Medicines</p>
+                  <button><a href="#sellers">BUY NOW</a></button>
+              </div>
+          </div>
+          <div class="content2">
+              <img src="health_device.jpeg" alt="img" />
+              <div class="img-content2">
+                  <p>Health Devices</p>
+                  <button><a href="#sellers">BUY NOW</a></button>
+              </div>
+          </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="sellers">
+      <div class="seller container">
+          <h2>Popular Medicines</h2>
+          <div class="best-seller">
+              <div class="best-p1">
+                  <img src="dolo65.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>DOLO-650</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                      </div>
+                      <div class="price">
+                        &#8377;28.48
+                          <div class="colors">
+                              <i class='bx bxs-circle red'></i>
+                              <i class='bx bxs-circle blue'></i>
+                              <i class='bx bxs-circle white'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy  Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="pantop.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Pantop 40</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;140.22
+                          <div class="colors">
+                              <i class='bx bxs-circle green'></i>
+                              <i class='bx bxs-circle grey'></i>
+                              <i class='bx bxs-circle brown'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy  Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="revital.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Revital-MultiVitamin<br>
+                             Tablets</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bx-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;450.00
+                          <div class="colors">
+                              <i class='bx bxs-circle brown'></i>
+                              <i class='bx bxs-circle green'></i>
+                              <i class='bx bxs-circle blue'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy  Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="saridon.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Saridon</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;39.5
+                          <div class="colors">
+                              <i class='bx bxs-circle red'></i>
+                              <i class='bx bxs-circle grey'></i>
+                              <i class='bx bxs-circle blue'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy Now</a></button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      <div class="seller container">
+          <h2>Other Health-Care Products</h2>
+          <div class="best-seller">
+              <div class="best-p1">
+                  <img src="ors.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>ORS</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;20.00
+                          <div class="colors">
+                              <i class='bx bxs-circle blank'></i>
+                              <i class='bx bxs-circle blue'></i>
+                              <i class='bx bxs-circle brown'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="chawanprash.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Dabur Chawanprash</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;336.00
+                          <div class="colors">
+                              <i class='bx bxs-circle brown'></i>
+                              <i class='bx bxs-circle red'></i>
+                              <i class='bx bxs-circle green'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="vitC.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Vitamin-C<br>
+                             Supplements</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;25.00
+                          <div class="colors">
+                              <i class='bx bxs-circle grey'></i>
+                              <i class='bx bxs-circle blank'></i>
+                              <i class='bx bxs-circle blank'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="vitD.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Vitamin-D<br>
+                            Supplements</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;249.00
+                          <div class="colors">
+                              <i class='bx bxs-circle grey'></i>
+                              <i class='bx bxs-circle red'></i>
+                              <i class='bx bxs-circle blue'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy  Now</a></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="seller container">
+          <h2>Health Devices</h2>
+          <div class="best-seller">
+              <div class="best-p1">
+                  <img src="pulse.jpg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Pulse machine</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;459.00
+                          <div class="colors">
+                              <i class='bx bxs-circle grey'></i>
+                              <i class='bx bxs-circle black'></i>
+                              <i class='bx bxs-circle blue'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="bp.jpeg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>BP machine</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;1997.00
+                          <div class="colors">
+                              <i class='bx bxs-circle blank'></i>
+                              <i class='bx bxs-circle blue'></i>
+                              <i class='bx bxs-circle brown'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="sugar.jpg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Sugar machine</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bxs-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;1999.00
+                          <div class="colors">
+                              <i class='bx bxs-circle blank'></i>
+                              <i class='bx bxs-circle red'></i>
+                              <i class='bx bxs-circle blue'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy Now</a></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="best-p1">
+                  <img src="syrenge.jpg" alt="img">
+                  <div class="best-p1-txt">
+                      <div class="name-of-p">
+                          <p>Syrenge</p>
+                      </div>
+                      <div class="rating">
+                          <i class='bx bxs-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                      </div>
+                      <div class="price">
+                          &#8377;80.00
+                          <div class="colors">
+                              <i class='bx bxs-circle blank'></i>
+                              <i class='bx bxs-circle grey'></i>
+                              <i class='bx bxs-circle brown'></i>
+                          </div>
+                      </div>
+                      <div class="buy-now">
+                          <button><a href="/">Buy Now</a></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <footer>
+      <div class="f-design">
+          <div class="f-design-txt container">
+              <p>Copyright &copy; 2024 Design By Code_Crafterz</p>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
